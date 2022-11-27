@@ -1,0 +1,28 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.cans{
+  border: 1px solid rgb(87, 57, 57);
+  background-color: rgb(38, 39, 26);
+}
+
+.mutebutton{
+  vertical-align: top;
+  background-color: aliceblue;
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.mutebutton:active {
+  vertical-align: top;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  background-color: rgb(208, 207, 248);
+}

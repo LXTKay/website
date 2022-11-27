@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>First Website</title>
+	<link rel="stylesheet" href="teststyles.css">
+	<script src="scrips.js" defer></script>
+</head>
+
+<body>
+	<div class="header">
+		<h1>My first Website</h1>
+	</div>
+	<div class="belly">
+		<div class="leftbox">
+			<p>This is the left column</p>
+			<button type="button" onclick="colorChanger()">
+				Change Header Color
+			</button>
+			<button id="discoPogo" type="button" onclick="disco.pogo()">
+				Disco Pogo
+			</button>
+			<button id="pogoSwitch" type="button" onclick="disco.switch()">
+				Stop Pogo
+			</button>
+			<button id="devLogButton" type="button" onclick="buttonMagic.loadDevLog()" data-hidBut>
+				Dev Log
+			</button>
+			<button id="calcButton" type="button" onclick="buttonMagic.loadCalc()" data-hidBut>
+				Calculator
+			</button>
+			<button id="gameButton" type="button" onclick="buttonMagic.loadGame()" data-hidBut>
+				Breakout Game
+			</button>
+			<button id="imgGalleryButton" type="button" onclick="buttonMagic.loadImageGallery()" data-hidBut>
+				Image Gallery
+			</button>
+			<button id="embeddedButton" type="button" onclick="buttonMagic.loadEmbeddedContent()" data-hidBut>
+				Embedded Code
+			</button>
+		</div>
+		<div class="mainbox" id="mainbox">
+			<div id="devLog" class="devLog" data-hidCont="2">
+				<p>
+					18.10.2022<br />
+					Erste Website erstellt.<br />
+					<br />
+					19.10.2022<br />
+					Knöpfe und Farbwechselheader erstellt.<br />
+					<br />
+					22.10.2022<br />
+					Disco Pogo Funktion erfolgreich eingebaut.<br />
+					<br />
+					25.10.2022<br />
+					Verbesserter Colorchanger Algorithmus.<br />
+					Knopfanimation.<br />
+					<br />
+					28.10.2022<br />
+					Taschenrechner fertig und eingefügt.<br />
+					<br />
+					03.11.2022<br />
+					Kleines Spiel fertig und eingefügt.<br />
+					Knöpfe leicht verändert.<br />
+					<br />
+					26.11.2022<br />
+					Simple Bildergallerie fertig und eingefügt.<br />
+					Spielelement wird nun vollständig entfernt.<br />
+					<br />
+					27.11.2022<br />
+					Externer Code eingebettet.<br />
+					Alter Code optimiert.</br>
+				</p>
+			</div>
+			<iframe id="rechner" src="Taschenrechner/calc.html" class="rechnerbox" data-hidCont="3" scrolling="no"></iframe>
+			<div id="imgGallery" data-hidCont="4">
+				<img id="bigImg" class="bigImage" src="https://en.js.cx/gallery/img2-lg.jpg">
+				<div id="thumb">
+					<div><img src="https://en.js.cx/gallery/img2-lg.jpg"></div>
+					<div><img src="https://en.js.cx/gallery/img3-lg.jpg"></div>
+					<div><img src="https://en.js.cx/gallery/img4-lg.jpg"></div>
+					<div><img src="https://en.js.cx/gallery/img5-lg.jpg"></div>
+					<div><img src="https://en.js.cx/gallery/img6-lg.jpg"></div>
+				</div>
+			</div>
+			<div id="embedded" data-hidCont="5">
+				<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1382746039&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+				<iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/955308292&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/62KN0gd1RlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/q5-cZIpldFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

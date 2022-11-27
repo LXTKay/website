@@ -1,0 +1,169 @@
+html{
+	height: 100%;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	height: 100%;
+	width: 100%;
+	background-color: gray;
+	margin: 0px;
+}
+
+.belly{
+	display: flex;
+	min-height: 100%;
+}
+
+.header{
+	background-color: rgb(89, 89, 89);
+	height: 100px;
+	border-width: 0px;
+	border-bottom-width: 1px;
+	border-style: solid;
+	white-space: nowrap;
+}
+
+h1{
+	height: auto;
+	width: auto;
+	font-size: 25pt;
+	border: 0px;
+	margin: 0px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 10px;
+}
+
+.leftbox{
+	background-color: gray;
+	width: fit-content;
+	display: block;
+	min-height: 100%;
+	padding: 0px;
+	float: left;
+	white-space: nowrap;
+}
+
+p{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 5px;
+}
+
+.mainbox{
+	background-color: rgba(255, 255, 255, 0.1);
+	display: block;
+	min-width: 75%;
+	max-width: 75%;
+	min-height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+button{
+	display: block;
+	margin: auto;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	border-width: 1px;
+	background-color: rgb(111, 111, 111);
+}
+
+button:hover{
+	background-color: rgb(120, 120, 120);
+	cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(89, 89, 89);
+}
+
+#pogoSwitch{
+	display: none;
+}
+
+.devLog{
+	size: fit-content;
+}
+
+.rechnerbox{
+	display: none;
+	margin: 10px;
+	padding: 0px;
+	height: 500px;
+	width: 250px;
+	border: 0px;
+}
+
+#devLogButton{
+	display: none;
+}
+
+.gamebox{
+	display: none;
+	margin: 10px;
+	padding: 0px;
+	height: 800px;
+	width: 400px;
+	border: 0px;
+}
+
+#imgGallery{
+	display: none;
+	width: fit-content;
+	height: fit-content;
+	margin: 10px;
+}
+
+.bigImage{
+	border: solid 1px #ccc;
+  width: 550px;
+  height: 400px;
+  padding: 5px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#thumb{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#thumb img{
+	width: 100px;
+  height: 100px;
+	display: block;
+	margin: auto;
+}
+
+#thumb div{
+  border: solid 1px #ccc;
+  padding: 3px;
+  margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: none;
+	margin-right: none;
+  float: left;
+}
+
+#thumb div:hover{
+	margin: none;
+	padding: none;
+	background-color: orange;
+	border: solid 1px rgb(255, 184, 184);
+	cursor: pointer;
+}
+
+#embedded{
+	display: none;
+	margin: none;
+	padding: none;
+}
