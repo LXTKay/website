@@ -75,6 +75,9 @@ let buttonMagic = {
   loadEmbeddedContent(){
     this.visibility();
     this.activate("#embeddedButton","#embedded");
+  },
+  loadNN(){
+    if(confirm("Opens in new Tab! Are you okay with that?")) window.open("aiEvolution/index.html");
   }
 };
 
